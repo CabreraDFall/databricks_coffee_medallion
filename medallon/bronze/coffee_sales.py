@@ -4,7 +4,7 @@ from pyspark.sql.functions import col, current_timestamp
 from pyspark.sql.functions import md5, concat_ws, sha2
 
 #configuracion
-SOURCE_PATH = "s3://coffee-sales-ab1/data-store/sales/"
+SOURCE_PATH = spark.conf.get("source_path_sales")
 
 @dp.materialized_view(
     name="coffee_sales.bronze.coffee",

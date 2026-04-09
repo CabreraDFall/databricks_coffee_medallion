@@ -29,7 +29,8 @@ El pipeline está dividido en tres capas lógicas para asegurar la trazabilidad 
    - medallon/silver/calendar.py
    - medallon/silver/slv_coffee_sales.py
    - medallon/gold/gld_coffee_sales.py
-3. Configura los parámetros necesarios:
+3. Configura los parámetros necesarios en los Settings del Pipeline:
+   - source_path_sales: Ruta del origen de datos (ej: s3://bucket/folder/).
    - start_date: Fecha de inicio para el calendario (ej: 2024-01-01).
    - end_date: Fecha de fin para el calendario (ej: 2025-12-31).
 
